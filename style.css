@@ -27,20 +27,20 @@ window#waybar.hidden {
   padding: 6px 18px;
   margin: 6px 3px;
   border-radius: 4px;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: #282828;
+  color: #ebdbb2;
 }
 
 #workspaces button.active {
-  color: #1e1e2e;
-  background-color: #cdd6f4;
+  color: #ebdbb2;
+  background-color: #282828;
 }
 
 #workspaces button:hover {
  box-shadow: inherit;
  text-shadow: inherit;
- color: #1e1e2e;
- background-color: #cdd6f4;
+ color: #282828;
+ background-color: #ebdbb2;
 }
 
 #workspaces button.urgent {
@@ -59,7 +59,7 @@ window#waybar.hidden {
   border-radius:17px;
   margin: 6px 3px;
   padding: 6px 12px;
-  background-color: #1e1e2e;
+  background-color: #282828;
   color: #181825;
 }
 
@@ -118,15 +118,17 @@ window#waybar.hidden {
 
 #clock {
   font-family: JetBrainsMono Nerd Font;
-  background-color: #cba6f7;
+  color: #8ec07c;
+  background-color: #282828 ;
 }
 
 #custom-power {
-  background-color: #f2cdcd;
+  background-color: #fb4934;
+  color: #282828
 }
 
 #custom-spotify {
-    background-color: #B8D8BA ;
+    background-color: #8ec07c ;
    
 }
 
