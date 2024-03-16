@@ -27,13 +27,16 @@ window#waybar.hidden {
   padding: 6px 18px;
   margin: 6px 3px;
   border-radius: 4px;
-  background-color: #282828;
+  background-color: rgba(0,0,0,0);
   color: #ebdbb2;
+  border-color: #ebdbb2;
+  border: 2px solid #ebdbb2;
 }
 
 #workspaces button.active {
-  color: #ebdbb2;
-  background-color: #282828;
+  color: #282828;
+  background-color: #ebdbb2;
+  border: 0px;
 }
 
 #workspaces button:hover {
@@ -53,18 +56,28 @@ window#waybar.hidden {
 #backlight,
 #pulseaudio,
 #network,
-#clock,
-#custom-spotify,
 #tray {
-  border-radius:17px;
+  border-radius:5px;
+  margin: 6px 3px;
+  border:1px solid #ebdbb2;
+  padding: 6px 12px;
+  background-color: rgba(0,0,0,0);
+  color: #ebdbb2;
+}
+
+#clock,
+#custom-spotify {
+  border-radius:4px;
   margin: 6px 3px;
   padding: 6px 12px;
   background-color: #282828;
-  color: #181825;
+  color: #181825;  
 }
 
 #custom-power {
   margin-right: 6px;
+  border-radius:17px;
+  border: 0px;
 }
 
 #custom-logo {
@@ -77,10 +90,10 @@ window#waybar.hidden {
 }
 
 #memory {
-  background-color: #ebdbb2;
+  background-color: rgba(0,0,0,0);
 }
 #battery {
-  background-color: #928374;
+  background-color: rgba(0,0,0,0);
 }
 @keyframes blink {
   to {
@@ -102,18 +115,20 @@ window#waybar.hidden {
 }
 #battery.charging {
   background-color: #a6e3a1;
+  color: #282828;
+  border: 0px;
 }
 
 #backlight {
-  background-color: #fbf1c7;
+  background-color: rgba(0,0,0,0);
 }
 
 #pulseaudio {
-  background-color: #bdae93;
+  background-color: rgba(0,0,0,0);
 }
 
 #network {
-  background-color: #d5c4a1;
+  background-color: rgba(0,0,0,0);
 }
 
 #clock {
@@ -133,13 +148,13 @@ window#waybar.hidden {
 }
 
 
-tooltip {
+#tooltip {
 border-radius: 8px;
 padding: 15px;
 background-color: #131822;
 }
 
-tooltip label {
+#tooltip label {
 padding: 5px;
 background-color: #131822;
 }
