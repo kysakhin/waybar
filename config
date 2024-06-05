@@ -8,14 +8,14 @@
     ],
     "modules-center": [
         "clock",
-	"custom/spotify"
+	"mpris"
     ],
     "modules-right": [
-        "backlight",
-        "memory",
-        "network",
-        "pulseaudio",
-        "battery",
+	"backlight",
+	"backlight/slider",
+	"pulseaudio",
+	"pulseaudio/slider",
+        "group/system",
         "custom/power"
     ],
     "wlr/taskbar": {
@@ -65,7 +65,7 @@
         "format": "  {:%I:%M %p}"
     },
     "network": {
-        "format-wifi" : "{icon}",
+        "format-wifi" : "{icon} ",
         "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
         "format-ethernet": "󰀂",
 	"format-alt" : "󱛇",
@@ -147,6 +147,37 @@
 	"format": "{} ",
 	"return-type": "json",
 	"on-click": "playerctl play-pause"
-	}
+	},
+"group/system": {
+	"modules": [
+		"network",
+		"memory",
+		"battery"
+		],
+	"orientation": "horizontal"
+},
+"pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+},
+"backlight/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal",
+    "device": "intel_backlight"
+},
+"mpris": {
+	"format": "{player_icon} {artist} {title}",
+	"format-paused": "{status_icon} <i>{artist} {title} </i>",
+	"player-icons": {
+		"default": "▶",
+		"mpv": "🎵"
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	// "ignored-players": ["firefox"]
+}
 }
 
