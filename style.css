@@ -107,13 +107,11 @@ window#waybar.hidden {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
+}*/
 #battery.charging {
-  background-color: #a6e3a1;
-  color: #282828;
+  color: #a6e3a1;
   border: 0px;
 }
-*/
 
 #clock {
   font-family: JetBrainsMono Nerd Font;

@@ -67,13 +67,13 @@
     "network": {
         "format-wifi" : "{icon} ",
         "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
-        "format-ethernet": "󰀂",
-	"format-alt" : "󱛇",
-        "format-disconnected" : "󰖪",
+        "format-ethernet": "󰀂 ",
+	"format-alt" : "󱛇 ",
+        "format-disconnected" : "󰖪 ",
 	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
 	"tooltip-format-disconnected": "Disconnected",
-	"on-click": "~/.config/rofi/wifi/wifi.sh &",
+	"on-click": "~/.config/rofi/wifi/wiki.sh &",
         "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
 	"interval": 5,
 	"nospacing": 1,
@@ -168,8 +168,8 @@
     "device": "intel_backlight"
 },
 "mpris": {
-	"format": "{player_icon} {artist} {title}",
-	"format-paused": "{status_icon} <i>{artist} {title} </i>",
+	"format": "{player_icon} {title} - {artist}",
+	"format-paused": "{status_icon} <i>{title} - {artist} </i>",
 	"player-icons": {
 		"default": "▶",
 		"mpv": "🎵"
